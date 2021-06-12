@@ -4,7 +4,7 @@ int	ft_str_is_numeric(char *str);
 
 int	main ()
 {
-	char	phrase[10] = "234567891";
+	char	phrase[10] = "23w567891";
 	
 	if (ft_str_is_numeric(phrase))
 		write(1, "Is only numbers.\n", 18);

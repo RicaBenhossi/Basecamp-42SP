@@ -1,10 +1,3 @@
-int	ft_char_is_number(char character)
-{
-	if (character >= '0' && character <= '9')
-		return (1);
-	return (0);
-}
-
 int	ft_str_is_numeric(char *str)
 {
 	int	i;
@@ -12,7 +5,7 @@ int	ft_str_is_numeric(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (! ft_char_is_number(str[i]))
+		if (str[i] < '0' && str[i] > '9')
 			return (0);
 		i++;
 	}

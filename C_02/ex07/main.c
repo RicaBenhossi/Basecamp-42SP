@@ -4,9 +4,8 @@ char	*ft_strupcase(char *str);
 
 int	main ()
 {
-	char	character[5] = 'aasd';
-	int result;
+	char	character[5] = "aasd";
 
-	result = ft_str_is_printable(character);
-	printf('%s')
+	ft_strupcase(character);
+	printf("%s", character);
 }
