@@ -10,10 +10,12 @@ alias basecamp='bash ${HOME}/.basecamp/basecamp'
 alias normgccrun='norminette -R CheckForbiddenSourceHeader && gcc -Wall -Wextra -Werror *.c && ./a.out'
 alias norm='norminette -R CheckForbiddenSourceHeader'
 alias norm-ft='norm $(find . -type f -name "ft_*.c")'
-alias gccpar='gcc -Wall -Wextra -Werror *.c'
+alias gccpall='gcc -Wall -Wextra -Werror *.c'
+alias gccp='gcc -Wall -Wextra -Werror'
 alias a='./a.out'
 alias clean-git='find -depth -mindepth 2 -type d,f -name ".git*" -exec rm -rf {} \;'
 alias ls-ft='find  -type f -name "ft_*.c" -print'
+alias gcctest='gccp "$1"/ft_*.c "$1"/"$1".c'
 
 export http_proxy=10.3.147.01:3128
 export https_proxy=10.3.147.01:3128
