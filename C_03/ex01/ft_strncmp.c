@@ -1,49 +1,13 @@
-int	ft_sum_str(char *str, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, int n)
 {
-	unsigned int	i;
-	int				result;
-
+	int	i;
+	
 	i = 0;
-	result = 0;
-	while (str[i] != '\0' && i < n)
+	while (s1 != '\0' && s2 != '\0' && i < (n - 1))
 	{
-		result += str[i];
+		if (s1[i] != s2[i])
+			return (*(unsigned char*)&s1[i] - *(unsigned char*)&s2[i]);
 		i++;
 	}
-	return (result);
+	return (*(unsigned char*)&s1[i] - *(unsigned char*)&s2[i]);
 }
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	int	result_s1;
-	int	result_s2;
-
-	result_s1 = ft_sum_str(s1, n);
-	result_s2 = ft_sum_str(s2, n);
-	return (result_s1 - result_s2);
-}
-
-// int    ft_sum_str(char *str, unsigned int n)
-// {
-//     int                result;
-//     unsigned int    i;
-
-//     i = 0;
-//     result = 0;
-//     while (str[i] != '\0' && i < n)
-//     {
-//         result += str[i];
-//         i++;
-//     }
-//     return (result);
-// }
-
-// int    ft_strncmp(char *s1, char *s2, unsigned int n)
-// {
-//     int    result_a;
-//     int    result_b;
-
-//     result_a = ft_sum_str(s1, n);
-//     result_b = ft_sum_str(s2, n);
-//     return (result_a - result_b);
-// }

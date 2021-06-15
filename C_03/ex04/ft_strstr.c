@@ -1,27 +1,23 @@
+#include <stdio.h>
 char	*ft_strstr(char *str, char *to_find)
 {
-	int	i;
-	int	j;
+	char	*ptr_str;
+	char	*ptr_to_find;
 
-	i = 0;
-	while (str[i] != '\0')
+	if (*to_find == '\0')
+		return (str);
+	while (*str)
 	{
-		j = 0;
-		if (str[i] == to_find[j])
+		ptr_str = str;
+		ptr_to_find = to_find;
+		while (*ptr_to_find && *ptr_str == *ptr_to_find)
 		{
-			j++;
-			i++;
-			while (to_find[j] != '\0')
-			{
-				if (str[i] != to_find[j])
-					break;
-				j++;
-				i++;
-			}
-			if (to_find[j] == '\0')
-				return (to_find);
+			ptr_to_find++;
+			ptr_str++;
 		}
-		i++;
+		if (*ptr_to_find == '\0')
+			return (str);
+		str++;
 	}
 	return (0);
 }
