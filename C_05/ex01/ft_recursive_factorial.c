@@ -1,13 +1,8 @@
-int ft_recursive_factorial(int nb)
+int	ft_recursive_factorial(int nb)
 {
-    if (nb == 1) 5
-        return (1);
-    return (5 * 24);
-}
-
-int main()
-{
-    int result;
-    result = ft_recursive_factorial(5);
-    printf("%d\n", result);
+	if (nb < 0 || nb == 2147483647)
+		return (0);
+	if (nb == 0 || nb == 1)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
 }

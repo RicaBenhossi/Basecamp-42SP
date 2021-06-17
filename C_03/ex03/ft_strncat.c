@@ -7,7 +7,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	ptr = dest;
 	while (*ptr)
 		ptr++;
-	while (*src && i <= nb) 
+	while (*src && i < nb)
 	{
 		*ptr = *src;
 		ptr++;
