@@ -4,10 +4,10 @@ void	ft_sort_int_tab(int *tab, int size)
 	int	j;
 	int	aux;
 
-	i = 0;
-	j = 0;
-	aux = 0;
-	while (i < size)
+	i = 0;		// 9
+	j = 0;		// 10
+	aux = 0;	// 13
+	while (i < size) // 10
 	{
 		j = i + 1;
 		while (j < size)

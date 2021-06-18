@@ -14,9 +14,12 @@ int main    (void)
     printf("Endereço a = \t\t%p\n", &a);
     printf("Endereço b = \t\t%p\n", &b);
     printf("Valor ptr = \t\t%p\n", ptr);
-    printf("Valor ptr -1 = \t\t%p\n", ptr - 1);
+    // printf("Valor ptr -1 = \t\t%p\n", ptr - 1);
     printf("Valor endereço ptr = \t%d\n", *ptr);
-    printf("Valor endereço ptr -1 = %d\n", *(ptr - 1));
+    // printf("Valor endereço ptr -1 = %d\n", *(ptr - 1));
+	*ptr = 5;
+    printf("Valor a = \t\t%d\n", a);
+    printf("Valor endereço ptr = \t%d\n", *ptr);
 
     // int	a;
     // int b;

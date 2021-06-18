@@ -26,7 +26,6 @@ int main(void)
 	p8 = &p7;
 	p9 = &p8;
 	ft_ultimate_ft(p9);
-
 	printf("%i\n", a);
 	return(0);
 }
