@@ -1,4 +1,3 @@
-#include <stdio.h>
 int	ft_sqrt(int nb)
 {
 	long int	i;
