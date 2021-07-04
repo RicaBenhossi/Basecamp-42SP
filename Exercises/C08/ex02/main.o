@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "ft_abs.h"
+
+int     main(void)
+{
+        int     teste1 = 12;
+        int     teste2 = -20;
+        int     teste3 = 0;
+
+        printf("Before: %d\n", teste1);
+        printf("After : %d\n", ABS(teste1));
+        printf("Before: %d\n", teste2);
+        printf("After : %d\n", ABS(teste2));
+        printf("Before: %d\n", teste3);
+        printf("After : %d\n", ABS(teste3));
+}

@@ -1,0 +1,3 @@
+[submodule "fake-moulinnete"]
+	path = fake-moulinnete
+	url = git@github.com:eduardomosko/fake-moulinnete.git
