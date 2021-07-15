@@ -1,0 +1,3 @@
+[submodule "tests-moulinette"]
+	path = tests-moulinette
+	url = git@github.com:RicaBenhossi/tests-moulinette.git
